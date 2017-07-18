@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:icon="@drawable/ic_action_menu"
+        android:showAsAction="always"
+        android:title="主選單">
+        <menu>
+            <item
+                android:id="@+id/liTrainingDataCollect"
+                android:title="觀察訓練數據"/>
+            <item
+                android:id="@+id/liFallDetection"
+                android:title="跌倒偵測"/>
+            <item
+                android:id="@+id/liAlertSetting"
+                android:title="警報設定"/>
+            <item
+                android:id="@+id/liCallphoneSetting"
+                android:title="緊急電話"/>
+            <item
+                android:id="@+id/liSms"
+                android:title="簡訊設定"/>
+        </menu>
+    </item>
+
+</menu>

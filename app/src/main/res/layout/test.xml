@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="com.example.shinlin.MainActivity"
+    android:background="#E8EAF6">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/mydivider"
+        android:showDividers="middle"
+
+        android:dividerPadding="0dp"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/fall_detection"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                android:text="偵測跌倒"
+                android:textSize="22sp"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/accel_stop"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/alert"
+            android:layout_width="175dp"
+            android:layout_height="170dp"
+            android:text="警報設定"
+            android:textSize="22sp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_above="@+id/linearLayout2"></RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:divider="@drawable/mydivider"
+        android:showDividers="middle"
+
+        android:dividerPadding="0dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/train_data"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                android:text="數據觀察"
+                android:textSize="22sp"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <Button
+                android:id="@+id/accel_start"
+                android:layout_width="175dp"
+                android:layout_height="170dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/option"
+            android:layout_width="175dp"
+            android:layout_height="170dp"
+            android:text="設定選項"
+            android:textSize="22sp"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/load_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="305dp"
+        android:layout_height="160dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout1"
+        android:background="#FFFFFF" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/top7"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CFD8DC"
+        android:id="@+id/imageView4"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

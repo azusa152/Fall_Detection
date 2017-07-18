@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:summary="Adjust settings"
+    android:title="警報設定" >
+
+    <PreferenceCategory android:title="發出警報設定" >
+        <CheckBoxPreference
+            android:key="issue_alert"
+            android:summary="當跌倒被偵測發出警報"
+            android:title="發出警報" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="AlertActions"
+        android:title="警報措施 " >
+        <RingtonePreference
+            android:key="@string/ringtonePref"
+            android:ringtoneType="ringtone"
+            android:summary="當警報發生鈴聲將會播放"
+            android:title="選擇ㄧ首鈴聲" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="警報讀秒" >
+        <EditTextPreference
+            android:key="Timeout"
+            android:summary="當跌倒發生後幾秒自動關閉警鈴通知"
+            android:title="設定警鈴通知秒數" />
+    </PreferenceCategory>
+    <!--
+    <PreferenceCategory android:title="警報讀秒" >
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/listArray"
+            android:entryValues="@array/listValues"
+            android:key="listPref"
+            android:summary="當跌倒發生後幾秒自動關閉警鈴通知"
+            android:title="選擇警鈴通知秒數" />
+    </PreferenceCategory>
+    -->
+
+</PreferenceScreen>

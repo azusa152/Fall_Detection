@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="緊急簡訊設定"
+        android:id="@+id/textView3"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0.0sp"
+        android:layout_marginTop="3.0sp"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <CheckBox
+            android:id="@+id/smscheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="發送簡訊"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/textView"
+            android:layout_alignBottom="@+id/smscheck"
+            android:layout_toRightOf="@+id/smscheck"
+            android:layout_toEndOf="@+id/smscheck"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="當跌倒被偵測發送簡訊"
+            android:id="@+id/textView30"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0sp"
+        android:layout_marginTop="0.0sp"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="輸入內容:"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/smsedittext"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:maxLines="14"
+            android:scrollbars="vertical"
+            android:singleLine="false"
+            android:text="我的手機偵測到跌倒發生，我可能已經受傷。" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0.0sp"
+        android:layout_marginTop="0.0sp"
+        android:baselineAligned="false"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <EditText
+            android:id="@+id/smsphonenumber"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:editable="false" />
+
+        <Button
+            android:id="@+id/imagesms"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0sp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/sms"
+            android:enabled="false"
+            android:text="" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
